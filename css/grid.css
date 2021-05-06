@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+    width: 950px;
+    margin:0 auto;
+  
+    padding: 0;
+
+}
+
+.wrap-col{
+    margin:10px;
+}
+.container .row::before , .row::after{
+    content: "  ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.container .row::after{
+    clear: both;
+}
+.container .adjust-1,.container .adjust-2{
+    float: left;
+    overflow: hidden;
+   
+
+}
+.container .adjust-1{
+    width: 75%;
+}
+.container .adjust-2{
+    width: 25%;
+}
